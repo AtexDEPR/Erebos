@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.nav-links li a:hover{
+    text-decoration:underline;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 55vh; /* Ajusta según sea necesario */
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    opacity: 0.5; /* Controla la opacidad del video */
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté por encima del video */
+    color: white; /* Ajusta el color según sea necesario */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    margin-top: 16%;
+}
+
+
+.hero-text h2 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.products {
+    padding: 2rem;
+    background-color: #262626;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.product-item {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+}
+
+.product-item img {
+    width: 100%;
+    height: 19vh;
+    margin-bottom: 1rem;
+}
+
+
+.product-item h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.product-item p {
+    margin-bottom: 0.5rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: #555;
+    box-shadow: #419cb8  0px 0px 10px;
+}
+
+#temporada h2{
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#temporada p{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#contacto {
+    background-color: #1c1c1c;
+    padding: 2rem;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contacto input, #contacto textarea {
+    padding: 0.5rem;
+    border: 1px solid #333;
+    background-color: #262626;
+    color: #fff;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 1rem;
+    background-color: #333;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .policies p {
+    margin-top: 1rem;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
